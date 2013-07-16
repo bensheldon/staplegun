@@ -1,9 +1,24 @@
 = staplegun
 
-Description goes here.
+Easily post new pins to your Pinterest boards
+
+== Usage
+
+```ruby
+  require 'staplegun'
+
+  stapler = Staplegun.new :email => "your.pinterest.account@email.com", :password => "pinterest_password"
+  stapler.pin {
+    :board_id => "12345678910",
+    :link => "http://some-awesome-website.com",
+    :image_url => "http://some-awesome-website.com/badass-image.png",
+    :description => "Awesome & Badass!"
+  }
+
+```
 
 == Contributing to staplegun
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
@@ -14,6 +29,5 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2013 Ben Sheldon. See LICENSE.txt for
-further details.
+Copyright (c) 2013 Ben Sheldon. See LICENSE.txt for further details.
 
