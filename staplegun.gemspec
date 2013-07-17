@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "staplegun"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ben Sheldon"]
-  s.date = "2013-07-16"
+  s.date = "2013-07-17"
   s.email = "bensheldon@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -28,7 +28,8 @@ Gem::Specification.new do |s|
     "spec/fixtures/vcr_cassettes/login_unsucessful.yml",
     "spec/fixtures/vcr_cassettes/pin_successful.yml",
     "spec/spec_helper.rb",
-    "spec/staplegun_spec.rb"
+    "spec/staplegun_spec.rb",
+    "staplegun.gemspec"
   ]
   s.homepage = "http://github.com/bensheldon/staplegun"
   s.licenses = ["MIT"]
