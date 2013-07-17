@@ -11,7 +11,7 @@ describe "Staplegun" do
       end
 
       it "logs in" do
-        puts @stapler.inspect
+        #  puts @stapler.inspect
       end
     end
 
