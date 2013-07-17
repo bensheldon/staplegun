@@ -57,7 +57,7 @@ class Staplegun
     return self
   end
 
-  def pin(pin)
+  def pin!(pin)
     @agent.get generate_pin_url(pin, :domain => true)
 
     data = {
@@ -87,6 +87,14 @@ class Staplegun
       headers('Referer' => generate_pin_url(pin, :domain => true))
 
     return self
+  end
+
+  def pin(pin)
+    begin
+      pin!(pin)
+    rescue
+      false
+    end
   end
 
   private
